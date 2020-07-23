@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ygo-db/static/css/main.5facb584.chunk.css",
-    "main.js": "/ygo-db/static/js/main.8a045722.chunk.js",
-    "main.js.map": "/ygo-db/static/js/main.8a045722.chunk.js.map",
+    "main.js": "/ygo-db/static/js/main.449d437b.chunk.js",
+    "main.js.map": "/ygo-db/static/js/main.449d437b.chunk.js.map",
     "runtime-main.js": "/ygo-db/static/js/runtime-main.f38e1e84.js",
     "runtime-main.js.map": "/ygo-db/static/js/runtime-main.f38e1e84.js.map",
     "static/js/2.f07c6a04.chunk.js": "/ygo-db/static/js/2.f07c6a04.chunk.js",
     "static/js/2.f07c6a04.chunk.js.map": "/ygo-db/static/js/2.f07c6a04.chunk.js.map",
     "index.html": "/ygo-db/index.html",
-    "precache-manifest.8ece9de9c3f57a40d168f1202c0d08ac.js": "/ygo-db/precache-manifest.8ece9de9c3f57a40d168f1202c0d08ac.js",
+    "precache-manifest.c1cc0d068ed8e453e33538ab626fd973.js": "/ygo-db/precache-manifest.c1cc0d068ed8e453e33538ab626fd973.js",
     "service-worker.js": "/ygo-db/service-worker.js",
     "static/css/main.5facb584.chunk.css.map": "/ygo-db/static/css/main.5facb584.chunk.css.map",
     "static/js/2.f07c6a04.chunk.js.LICENSE.txt": "/ygo-db/static/js/2.f07c6a04.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f38e1e84.js",
     "static/js/2.f07c6a04.chunk.js",
     "static/css/main.5facb584.chunk.css",
-    "static/js/main.8a045722.chunk.js"
+    "static/js/main.449d437b.chunk.js"
   ]
 }
