@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/ygo-db/static/css/main.5facb584.chunk.css",
-    "main.js": "/ygo-db/static/js/main.29821170.chunk.js",
-    "main.js.map": "/ygo-db/static/js/main.29821170.chunk.js.map",
+    "main.js": "/ygo-db/static/js/main.8a045722.chunk.js",
+    "main.js.map": "/ygo-db/static/js/main.8a045722.chunk.js.map",
     "runtime-main.js": "/ygo-db/static/js/runtime-main.f38e1e84.js",
     "runtime-main.js.map": "/ygo-db/static/js/runtime-main.f38e1e84.js.map",
-    "static/js/2.a0d31d8b.chunk.js": "/ygo-db/static/js/2.a0d31d8b.chunk.js",
-    "static/js/2.a0d31d8b.chunk.js.map": "/ygo-db/static/js/2.a0d31d8b.chunk.js.map",
+    "static/js/2.f07c6a04.chunk.js": "/ygo-db/static/js/2.f07c6a04.chunk.js",
+    "static/js/2.f07c6a04.chunk.js.map": "/ygo-db/static/js/2.f07c6a04.chunk.js.map",
     "index.html": "/ygo-db/index.html",
-    "precache-manifest.db0abc25556738fb89959ca17ac5c06d.js": "/ygo-db/precache-manifest.db0abc25556738fb89959ca17ac5c06d.js",
+    "precache-manifest.8ece9de9c3f57a40d168f1202c0d08ac.js": "/ygo-db/precache-manifest.8ece9de9c3f57a40d168f1202c0d08ac.js",
     "service-worker.js": "/ygo-db/service-worker.js",
     "static/css/main.5facb584.chunk.css.map": "/ygo-db/static/css/main.5facb584.chunk.css.map",
-    "static/js/2.a0d31d8b.chunk.js.LICENSE.txt": "/ygo-db/static/js/2.a0d31d8b.chunk.js.LICENSE.txt"
+    "static/js/2.f07c6a04.chunk.js.LICENSE.txt": "/ygo-db/static/js/2.f07c6a04.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f38e1e84.js",
-    "static/js/2.a0d31d8b.chunk.js",
+    "static/js/2.f07c6a04.chunk.js",
     "static/css/main.5facb584.chunk.css",
-    "static/js/main.29821170.chunk.js"
+    "static/js/main.8a045722.chunk.js"
   ]
 }
