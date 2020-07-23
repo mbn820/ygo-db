@@ -1,6 +1,6 @@
 {
   "name": "ygo-db",
-  "homepage": "http://mbn820.github.io/ygo-db"
+  "homepage": "http://mbn820.github.io/ygo-db",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
