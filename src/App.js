@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Header from './components/Header';
 import NavigationBar from './components/NavigationBar';
 import CardGrid from './components/CardGrid';
 import Container from 'react-bootstrap/Container';
@@ -20,15 +19,16 @@ function App() {
   }, []);
 
   const searchCard = (searchTerm) => {
-    console.log('Clicked: ' + searchTerm);
+    console.log('Searching: ' + searchTerm);
+    
     axios.get(`${BASE_URL}&fname=${searchTerm}`)
       .then(res => setCards(res.data));
   };
 
   return (
     <div>
-      <NavigationBar></NavigationBar>
-      <Header searchFn={searchCard}></Header>
+      <NavigationBar searchFn={searchCard}></NavigationBar>
+      <div style={{height: 90}}></div>
       <Container>
         <CardGrid cards={cards.data}></CardGrid>
       </Container>
