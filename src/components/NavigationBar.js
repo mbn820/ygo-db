@@ -7,6 +7,7 @@ import FormControl from 'react-bootstrap/FormControl';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 import debounce from 'lodash/debounce';
+import logo from '../assets/logo.png'
 
 const NavigationBar = ({ searchFn }) => {
   const debouncedSearch = useCallback(debounce(term => searchFn(term), 1000), []);
@@ -16,13 +17,13 @@ const NavigationBar = ({ searchFn }) => {
       <NavBar collapseOnSelect bg="dark" variant="dark" expand="lg" fixed="top">
         <Container>
           <NavBar.Brand>
-            <img src="/logo.png" height="50"/>
+            <img src={logo} height="50"/>
           </NavBar.Brand>
           <NavBar.Toggle></NavBar.Toggle>
           <NavBar.Collapse>
             <Nav className="mr-auto d-flex align-items-center">
               <Nav.Link href="#latest">Latest</Nav.Link>
-              <Nav.Link href="#sets">Decks</Nav.Link>
+              <Nav.Link href="#decks">Decks</Nav.Link>
               <Nav.Link href="#sets">Sets</Nav.Link>
               <Nav.Link href="#archetypes">Archetypes</Nav.Link>
               <Nav.Link href="#deck-builder">Deck Builder</Nav.Link>
