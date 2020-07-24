@@ -17,7 +17,7 @@ const CardGrid = props => {
     <div>
       <Row className="d-flex justify-content-center">
         {props.cards.map(card => (
-          <Col sm={6} md={3} lg={2} className="mb-3 d-flex justify-content-center" key={card.id}>
+          <Col sm={6} md={6} lg={3} className="mb-3 d-flex justify-content-center" key={card.id}>
             <Image src={card?.card_images[0]?.image_url_small} onClick={() => onSelectCard(card)}></Image>
           </Col>
         ))}
@@ -29,7 +29,6 @@ const CardGrid = props => {
         </Modal.Header>
         <Modal.Body className="d-flex justify-content-center">
           <Image src={selectedCard?.card_images[0]?.image_url} className="container-fluid"></Image>
-          {/* <h1>TEST</h1> */}
         </Modal.Body>
       </Modal> 
     </div>

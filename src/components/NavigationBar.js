@@ -31,7 +31,7 @@ const NavigationBar = ({ searchFn }) => {
             <Form>
               <InputGroup>
                 <InputGroup.Prepend>
-                  <InputGroup.Text><i className="fa fa-search"></i></InputGroup.Text>
+                  <InputGroup.Text variant="primary"><i className="fa fa-search"></i></InputGroup.Text>
                 </InputGroup.Prepend>
                 <FormControl type="text" placeholder="Search Cards" className="mr-2" onChange={e => debouncedSearch(e.target.value)}></FormControl>
               </InputGroup>
