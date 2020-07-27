@@ -92,10 +92,10 @@ const SearchForm = ({ searchFn }) => {
           <Form.Group>
             <Form.Label className="small">Card Name</Form.Label>
             <InputGroup size="sm">
-              <FormControl type="text" placeholder="Search Cards" name="fname" value={params.fname} onChange={onChange}></FormControl>
-              <InputGroup.Append>
+              <InputGroup.Prepend>
                 <InputGroup.Text variant="primary"><i className="fa fa-search"></i></InputGroup.Text>
-              </InputGroup.Append>
+              </InputGroup.Prepend>
+              <FormControl type="text" placeholder="Search Cards" name="fname" value={params.fname} onChange={onChange}></FormControl>
             </InputGroup>
           </Form.Group>
         </Card.Header>

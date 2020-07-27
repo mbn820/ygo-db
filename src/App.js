@@ -12,13 +12,17 @@ import axios from 'axios';
 function App() {
   const BASE_URL = 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=25&offset=0';
   const [cards, setCards] = useState({ data: [] });
+  const [loadingCards, setLoadingCards] = useState(false);
 
   useEffect(() => {
+    setLoadingCards(true);
     axios.get(BASE_URL)
       .then(res => {
         console.log(res.data);
         setCards(res.data);
-      });
+      })
+      .catch(err => setCards([]))
+      .finally(() => setLoadingCards(false));
 
   }, []);
 
@@ -32,8 +36,14 @@ function App() {
   const searchCards = (params) => {
     console.log('PARAMS: ' + JSON.stringify(params));
 
+    setLoadingCards(true);
     axios.get(BASE_URL, {params})
-      .then(res => setCards(res.data));
+      .then(res => setCards(res.data))
+      .catch(err => {
+        console.log(err);
+        setCards([]);
+      })
+      .finally(() => setLoadingCards(false));
   };
 
   return (
@@ -44,10 +54,10 @@ function App() {
         <Container>
           <Switch>
             <Route path="/" exact>
-              <Cards cards={cards} searchFn={searchCards} />
+              <Cards cards={cards} searchFn={searchCards} loading={loadingCards} />
             </Route>
             <Route path="/cards">
-              <Cards cards={cards} searchFn={searchCards} />
+              <Cards cards={cards} searchFn={searchCards} loading={loadingCards} />
             </Route>
             <Route path="/decks">
               <InProgressPage />

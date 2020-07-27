@@ -21,21 +21,21 @@ const NavigationBar = ({ searchFn }) => {
           </NavBar.Brand>
           <NavBar.Toggle></NavBar.Toggle>
           <NavBar.Collapse>
-            <Nav className="mr-auto d-flex align-items-center">
-              <Nav.Link as={Link} to="/cards">Cards</Nav.Link>
-              <Nav.Link as={Link} to="/decks">Decks</Nav.Link>
-              <Nav.Link as={Link} to="/sets">Sets</Nav.Link>
-              <Nav.Link as={Link} to="/archetypes">Archetypes</Nav.Link>
-              <Nav.Link as={Link} to="/deck-builder">Deck Builder</Nav.Link>
+            <Nav className="ml-auto">
+              <Nav.Link as={Link} to="/cards" className="ml-5">Cards</Nav.Link>
+              <Nav.Link as={Link} to="/decks" className="ml-5">Decks</Nav.Link>
+              <Nav.Link as={Link} to="/sets" className="ml-5">Sets</Nav.Link>
+              <Nav.Link as={Link} to="/archetypes" className="ml-5">Archetypes</Nav.Link>
+              <Nav.Link as={Link} to="/deck-builder" className="ml-5">Deck Builder</Nav.Link>
             </Nav>
-            <Form>
+            {/* <Form>
               <InputGroup>
                 <InputGroup.Prepend>
                   <InputGroup.Text variant="primary"><i className="fa fa-search"></i></InputGroup.Text>
                 </InputGroup.Prepend>
                 <FormControl type="text" placeholder="Search Cards" className="mr-2" onChange={e => debouncedSearch(e.target.value)}></FormControl>
               </InputGroup>
-            </Form>
+            </Form> */}
           </NavBar.Collapse>
         </Container>
       </NavBar>
