@@ -29,6 +29,13 @@ function App() {
       .then(res => setCards(res.data));
   };
 
+  const searchCards = (params) => {
+    console.log('PARAMS: ' + JSON.stringify(params));
+
+    axios.get(BASE_URL, {params})
+      .then(res => setCards(res.data));
+  };
+
   return (
     <div>
       <BrowserRouter>
@@ -37,10 +44,10 @@ function App() {
         <Container>
           <Switch>
             <Route path="/" exact>
-              <Cards cards={cards} />
+              <Cards cards={cards} searchFn={searchCards} />
             </Route>
             <Route path="/cards">
-              <Cards cards={cards} />
+              <Cards cards={cards} searchFn={searchCards} />
             </Route>
             <Route path="/decks">
               <InProgressPage />
