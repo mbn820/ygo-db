@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar';
-import SettingsBar from './components/SettingsBar';
-import SearchForm from './components/SearchForm';
-import CardGrid from './components/CardGrid';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Cards from './routes/Cards';
+import Decks from './routes/Decks';
+import PageNotFound from './routes/PageNotFound';
+import InProgressPage from './routes/InProgressPage';
 import axios from 'axios';
 
 function App() {
-  const BASE_URL = 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=30&offset=0';
+  const BASE_URL = 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=25&offset=0';
   const [cards, setCards] = useState({ data: [] });
 
   useEffect(() => {
@@ -31,19 +31,35 @@ function App() {
 
   return (
     <div>
-      <NavigationBar searchFn={searchCard}></NavigationBar>
-      <div style={{height: 100}}></div>
-      <Container>
-        <SettingsBar></SettingsBar>
-        <Row>
-          <Col md={4} sm={12}>
-            <SearchForm />
-          </Col>
-          <Col md={8} sm={12}>
-            <CardGrid cards={cards.data}></CardGrid>
-          </Col>
-        </Row>
-      </Container>
+      <BrowserRouter>
+        <NavigationBar searchFn={searchCard}></NavigationBar>
+        <div style={{height: 110}}></div>
+        <Container>
+          <Switch>
+            <Route path="/" exact>
+              <Cards cards={cards} />
+            </Route>
+            <Route path="/cards">
+              <Cards cards={cards} />
+            </Route>
+            <Route path="/decks">
+              <InProgressPage />
+            </Route>
+            <Route path="/sets">
+              <InProgressPage />
+            </Route>
+            <Route path="/archetypes">
+              <InProgressPage />
+            </Route>
+            <Route path="/deck-builder">
+              <InProgressPage />
+            </Route>
+            <Route path="*">
+              <PageNotFound />
+            </Route>
+          </Switch>
+        </Container>
+      </BrowserRouter>
     </div>
   );
 }
