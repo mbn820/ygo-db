@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar';
 import Container from 'react-bootstrap/Container';
 import Cards from './routes/Cards';
+import CardSearch from './routes/CardSearch';
 import Decks from './routes/Decks';
 import PageNotFound from './routes/PageNotFound';
 import InProgressPage from './routes/InProgressPage';
@@ -14,17 +15,17 @@ function App() {
   const [cards, setCards] = useState({ data: [] });
   const [loadingCards, setLoadingCards] = useState(false);
 
-  useEffect(() => {
-    setLoadingCards(true);
-    axios.get(BASE_URL)
-      .then(res => {
-        console.log(res.data);
-        setCards(res.data);
-      })
-      .catch(err => setCards([]))
-      .finally(() => setLoadingCards(false));
+  // useEffect(() => {
+  //   setLoadingCards(true);
+  //   axios.get(BASE_URL)
+  //     .then(res => {
+  //       console.log(res.data);
+  //       setCards(res.data);
+  //     })
+  //     .catch(err => setCards([]))
+  //     .finally(() => setLoadingCards(false));
 
-  }, []);
+  // }, []);
 
   const searchCard = (searchTerm) => {
     console.log('Searching: ' + searchTerm);
@@ -58,6 +59,9 @@ function App() {
             </Route>
             <Route path="/cards">
               <Cards cards={cards} searchFn={searchCards} loading={loadingCards} />
+            </Route>
+            <Route path="/card-search">
+              <CardSearch cards={cards} searchFn={searchCards} loading={loadingCards} />
             </Route>
             <Route path="/decks">
               <InProgressPage />
