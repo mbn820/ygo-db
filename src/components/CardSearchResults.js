@@ -30,6 +30,9 @@ const CardSearchResults = ({ searchResults }) => {
             </Col>
           </Row>
         </Card.Header>
+        <Card.Footer className="d-flex justify-content-center">
+          <CardSearchPagination meta={meta} />
+        </Card.Footer> 
         <Card.Body className="">
           <CardGallery cards={data} />
         </Card.Body> 
