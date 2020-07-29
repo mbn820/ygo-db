@@ -6,7 +6,7 @@ const PageNotFound = () => {
     <div className="text-center mt-4">
       <h2>404</h2>
       <p>Page Not Found</p>
-      <Link to="/">HOME</Link>
+      <Link to="/ygo-db">HOME</Link>
     </div>
   );
 };

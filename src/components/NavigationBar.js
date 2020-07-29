@@ -22,11 +22,11 @@ const NavigationBar = ({ searchFn }) => {
           <NavBar.Toggle></NavBar.Toggle>
           <NavBar.Collapse>
             <Nav className="ml-auto">
-              <Nav.Link as={Link} to="/card-search" className="ml-5">Card Search</Nav.Link>
-              <Nav.Link as={Link} to="/decks" className="ml-5">Decks</Nav.Link>
-              <Nav.Link as={Link} to="/sets" className="ml-5">Sets</Nav.Link>
-              <Nav.Link as={Link} to="/archetypes" className="ml-5">Archetypes</Nav.Link>
-              <Nav.Link as={Link} to="/deck-builder" className="ml-5">Deck Builder</Nav.Link>
+              <Nav.Link as={Link} to="/ygo-db/card-search" className="ml-5">Card Search</Nav.Link>
+              <Nav.Link as={Link} to="/ygo-db/decks" className="ml-5">Decks</Nav.Link>
+              <Nav.Link as={Link} to="/ygo-db/sets" className="ml-5">Sets</Nav.Link>
+              <Nav.Link as={Link} to="/ygo-db/archetypes" className="ml-5">Archetypes</Nav.Link>
+              <Nav.Link as={Link} to="/ygo-db/deck-builder" className="ml-5">Deck Builder</Nav.Link>
             </Nav>
             {/* <Form>
               <InputGroup>

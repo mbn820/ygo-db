@@ -6,7 +6,7 @@ const InProgressPage = () => {
     <div className="text-center mt-4">
       <h2>In Progress</h2>
       <p>Coming Soon</p>
-      <Link to="/">HOME</Link>
+      <Link to="/ygo-db">HOME</Link>
     </div>
   );
 };

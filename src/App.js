@@ -15,22 +15,22 @@ function App() {
         <div style={{height: 110}}></div>
         <Container>
           <Switch>
-            <Route path="/" exact>
+            <Route path="/ygo-db" exact>
               <CardSearch />
             </Route>
-            <Route path="/card-search">
+            <Route path="/ygo-db/card-search">
               <CardSearch />
             </Route>
-            <Route path="/decks">
+            <Route path="/ygo-db/decks">
               <InProgressPage />
             </Route>
-            <Route path="/sets">
+            <Route path="/ygo-db/sets">
               <InProgressPage />
             </Route>
-            <Route path="/archetypes">
+            <Route path="/ygo-db/archetypes">
               <InProgressPage />
             </Route>
-            <Route path="/deck-builder">
+            <Route path="/ygo-db/deck-builder">
               <InProgressPage />
             </Route>
             <Route path="*">
