@@ -10,9 +10,7 @@ import ParamsSelect from './ParamsSelect';
 import CardSearchContext from '../context/CardSearchContext';
 
 const CardSearchForm = () => {
-  const {params, setParams, search} = useContext(CardSearchContext);
-
-  const [paramsLocal, setParamsLocal] = useState({...params});
+  const {params, setParams, pageInfo, setPageInfo, search} = useContext(CardSearchContext);
 
   const types = {
     Main: [
@@ -68,6 +66,12 @@ const CardSearchForm = () => {
     setParams(update);
   };
 
+  const onSearch = () => {
+    const pageInfoUpdate = { ...pageInfo, page: 1 }
+    setPageInfo(pageInfoUpdate);
+    search(params, pageInfoUpdate);
+  }
+
   return (
     <div>
       <Card>
@@ -84,7 +88,7 @@ const CardSearchForm = () => {
               </Form.Group>
             </Col>
             <Col sm={12} md={2}>
-              <Button block onClick={() => search(params)}>Search</Button>
+              <Button block onClick={onSearch}>Search</Button>
             </Col>
           </Row>
         </Card.Header>

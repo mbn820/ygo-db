@@ -11,8 +11,6 @@ const CardSearch = () => {
   const [searchResults, setSearchResults] = useState(null);
   const [loadingResults, setLoadingResults] = useState(false);
   const [params, setParams] = useState({
-    num: 10,
-    offset: '0',
     sort: 'Name',
     view: 'Gallery',
     fname: '',
@@ -27,15 +25,27 @@ const CardSearch = () => {
     cardSet: '',
     linkArrow: ''
   });
+  const [pageInfo, setPageInfo] = useState({
+    size: 10,
+    page: 1
+  });
 
   useEffect(() => {
-    search(params);
+    search(params, pageInfo);
 
   }, []);
 
-  const search = (params) => {
-    const cleanParams = { params: _.pickBy(params) };
-    console.log(JSON.stringify(cleanParams))
+  const search = (params, pageInfo) => {
+    const processedPageInfo = {
+      num: (pageInfo.size).toString(),
+      offset: ((pageInfo.page - 1) * pageInfo.size).toString()
+    };
+    const combinedParams = {
+      ...params,
+      ...processedPageInfo
+    }
+    const cleanParams = { params: _.pickBy(combinedParams) };
+    console.log(JSON.stringify({cleanParams}))
 
     setLoadingResults(true);
     axios.get(BASE_URL, cleanParams)
@@ -44,9 +54,13 @@ const CardSearch = () => {
       .finally(() => setLoadingResults(false));
   };
 
+  const paginate = () => {
+
+  };
+
   return (
     <div>
-      <CardSearchContext.Provider value={{ params, setParams, search }}>
+      <CardSearchContext.Provider value={{ params, setParams, pageInfo, setPageInfo, search }}>
         <CardSearchForm />
         <div className="mt-3"></div>
         {loadingResults 

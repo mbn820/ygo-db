@@ -16,7 +16,7 @@ const CardGallery = ({ cards }) => {
 const CardGalleryItem = ({ card }) => {
   return (
     <>
-      <Card body>
+      <Card body className="border-light">
         <Row>
           <Col sm={12} md={2}>
             <div className="mb-3 mb-md-0">

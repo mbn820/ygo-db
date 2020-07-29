@@ -5,7 +5,7 @@ import ParamsSelect from './ParamsSelect';
 import CardSearchContext from '../context/CardSearchContext';
 
 const CardSearchSettings = () => {
-  const { params, setParams, search } = useContext(CardSearchContext);
+  const { params, setParams, pageInfo, setPageInfo, search } = useContext(CardSearchContext);
 
   const sorts = ['Newest', 'ATK', 'DEF', 'Level', 'Name', 'Views', 'TCG Release', 'OCG Release'];
 
@@ -13,23 +13,33 @@ const CardSearchSettings = () => {
 
   const views = ['Gallery', 'List'];
 
-  const onChange = (e) => {
-    const update = {...params, [e.target.name]: e.target.value};
+  const onSort = (e) => {
+    const update = { ...params, sort: e.target.value };
     setParams(update);
-    search(update);
+    search(update, pageInfo);
+  }
+
+  const onSelectPageSize = (e) => {
+    const update = { ...pageInfo, size: e.target.value };
+    setPageInfo(update);
+    search(params, update);
+  }
+
+  const onSelectView = (e) => {
+    console.log('Changing view');
   };
 
   return (
     <>
       <Row>
         <Col sm={12} md={4}>
-          <ParamsSelect name="sort" value={params.sort} options={sorts} onChange={onChange} display={sort => `Sort by ${sort}`} />
+          <ParamsSelect name="sort" value={params.sort} options={sorts} onChange={onSort} display={sort => `Sort by ${sort}`} />
         </Col>
         <Col sm={12} md={4}>
-          <ParamsSelect name="num" value={params.num} options={pages} onChange={onChange} display={page => `Show ${page} items per page`} />
+          <ParamsSelect name="num" value={pageInfo.size} options={pages} onChange={onSelectPageSize} display={page => `Show ${page} items per page`} />
         </Col>
         <Col sm={12} md={4}>
-          <ParamsSelect name="view" value={params.view} options={views} onChange={onChange} display={view => `View as ${view}`} />
+          <ParamsSelect name="view" value={params.view} options={views} onChange={onSelectView} display={view => `View as ${view}`} />
         </Col>
       </Row>
     </>
