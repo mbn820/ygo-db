@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/ygo-db/static/css/main.f1388bb1.chunk.css",
-    "main.js": "/ygo-db/static/js/main.d7c6f486.chunk.js",
-    "main.js.map": "/ygo-db/static/js/main.d7c6f486.chunk.js.map",
+    "main.js": "/ygo-db/static/js/main.c8c3f3a7.chunk.js",
+    "main.js.map": "/ygo-db/static/js/main.c8c3f3a7.chunk.js.map",
     "runtime-main.js": "/ygo-db/static/js/runtime-main.f38e1e84.js",
     "runtime-main.js.map": "/ygo-db/static/js/runtime-main.f38e1e84.js.map",
-    "static/js/2.a66db2b9.chunk.js": "/ygo-db/static/js/2.a66db2b9.chunk.js",
-    "static/js/2.a66db2b9.chunk.js.map": "/ygo-db/static/js/2.a66db2b9.chunk.js.map",
+    "static/js/2.94b3dfde.chunk.js": "/ygo-db/static/js/2.94b3dfde.chunk.js",
+    "static/js/2.94b3dfde.chunk.js.map": "/ygo-db/static/js/2.94b3dfde.chunk.js.map",
     "index.html": "/ygo-db/index.html",
-    "precache-manifest.6fa20ffd05dd89df34081e153622862e.js": "/ygo-db/precache-manifest.6fa20ffd05dd89df34081e153622862e.js",
+    "precache-manifest.d1e38c99b37d6ad31f16fbebb4e46521.js": "/ygo-db/precache-manifest.d1e38c99b37d6ad31f16fbebb4e46521.js",
     "service-worker.js": "/ygo-db/service-worker.js",
     "static/css/main.f1388bb1.chunk.css.map": "/ygo-db/static/css/main.f1388bb1.chunk.css.map",
-    "static/js/2.a66db2b9.chunk.js.LICENSE.txt": "/ygo-db/static/js/2.a66db2b9.chunk.js.LICENSE.txt",
+    "static/js/2.94b3dfde.chunk.js.LICENSE.txt": "/ygo-db/static/js/2.94b3dfde.chunk.js.LICENSE.txt",
     "static/media/card-back.png": "/ygo-db/static/media/card-back.f16ec535.png",
     "static/media/loading.gif": "/ygo-db/static/media/loading.701d0039.gif",
     "static/media/logo.png": "/ygo-db/static/media/logo.6025d515.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f38e1e84.js",
-    "static/js/2.a66db2b9.chunk.js",
+    "static/js/2.94b3dfde.chunk.js",
     "static/css/main.f1388bb1.chunk.css",
-    "static/js/main.d7c6f486.chunk.js"
+    "static/js/main.c8c3f3a7.chunk.js"
   ]
 }

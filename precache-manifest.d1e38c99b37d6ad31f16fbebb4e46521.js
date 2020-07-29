@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7b05314c01571de2440f900aeeafe72f",
+    "revision": "a131827c671a0f76c8620afed7607944",
     "url": "/ygo-db/index.html"
   },
   {
-    "revision": "35400ab219fc64a2cf1a",
+    "revision": "fd941153ce8355a3f0f6",
     "url": "/ygo-db/static/css/main.f1388bb1.chunk.css"
   },
   {
-    "revision": "4de9692ec673a6f69fb2",
-    "url": "/ygo-db/static/js/2.a66db2b9.chunk.js"
+    "revision": "688262b010f233caf396",
+    "url": "/ygo-db/static/js/2.94b3dfde.chunk.js"
   },
   {
     "revision": "117d65892edc8adcd29d4a0d57b5a80a",
-    "url": "/ygo-db/static/js/2.a66db2b9.chunk.js.LICENSE.txt"
+    "url": "/ygo-db/static/js/2.94b3dfde.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "35400ab219fc64a2cf1a",
-    "url": "/ygo-db/static/js/main.d7c6f486.chunk.js"
+    "revision": "fd941153ce8355a3f0f6",
+    "url": "/ygo-db/static/js/main.c8c3f3a7.chunk.js"
   },
   {
     "revision": "6cd0f440560da06f039b",
