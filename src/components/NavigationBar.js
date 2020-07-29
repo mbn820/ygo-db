@@ -22,7 +22,6 @@ const NavigationBar = ({ searchFn }) => {
           <NavBar.Toggle></NavBar.Toggle>
           <NavBar.Collapse>
             <Nav className="ml-auto">
-              <Nav.Link as={Link} to="/cards" className="ml-5">Cards</Nav.Link>
               <Nav.Link as={Link} to="/card-search" className="ml-5">Card Search</Nav.Link>
               <Nav.Link as={Link} to="/decks" className="ml-5">Decks</Nav.Link>
               <Nav.Link as={Link} to="/sets" className="ml-5">Sets</Nav.Link>
