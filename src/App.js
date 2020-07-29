@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar';
+import Footer from './components/Footer';
 import Container from 'react-bootstrap/Container';
 import CardSearch from './routes/CardSearch';
 import PageNotFound from './routes/PageNotFound';
@@ -11,7 +12,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <NavigationBar searchFn={() => {}}></NavigationBar>
+        <NavigationBar searchFn={() => {}} />
         <div style={{height: 110}}></div>
         <Container>
           <Switch>
@@ -38,6 +39,7 @@ function App() {
             </Route>
           </Switch>
         </Container>
+        <Footer />
       </BrowserRouter>
     </div>
   );
