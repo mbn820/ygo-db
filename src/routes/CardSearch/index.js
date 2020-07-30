@@ -10,6 +10,7 @@ import ResultInfo from './components/ResultInfo';
 import CardSearchSettings from './components/CardSearchSettings';
 import CardSearchPagination from './components/CardSearchPagination';
 import CardSearchForm from './components/CardSearchForm';
+import NoResultsFound from './components/NoResultsFound';
 
 const CardSearch = () => {
   const [searchResults, setSearchResults] = useState(null);
@@ -42,7 +43,7 @@ const CardSearch = () => {
     setLoadingResults(true);
     searchCards(params, pageInfo)
       .then(res => setSearchResults(res.data))
-      .catch(err => setSearchResults({}))
+      .catch(err => setSearchResults(null))
       .finally(() => setLoadingResults(false));
   };
 
@@ -75,7 +76,9 @@ const CardSearch = () => {
                 <CardSearchPagination />
               </Card.Footer> 
             </Card>
-          : null  
+          : <Card body>
+              <NoResultsFound />
+            </Card> 
         }
       </CardSearchContext.Provider>
     </>

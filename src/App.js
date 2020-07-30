@@ -10,12 +10,12 @@ import InProgressPage from './routes/InProgressPage';
 
 function App() {
   return (
-    <div>
+    <>
       <BrowserRouter>
-        <div className="main-bg">
+        <div>
           <NavigationBar searchFn={() => {}} />
           <div style={{height: 110}}></div>
-          <Container>
+          <Container className="h-100">
             <Switch>
               <Route path="/ygo-db" exact>
                 <CardSearch />
@@ -43,7 +43,7 @@ function App() {
           <Footer />
         </div>
       </BrowserRouter>
-    </div>
+    </>
   );
 }
 

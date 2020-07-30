@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const PageNotFound = () => {
   return (
-    <div className="text-center mt-4">
+    <div className="text-center mt-4 vh-100">
       <h2>404</h2>
       <p>Page Not Found</p>
       <Link to="/ygo-db">HOME</Link>
