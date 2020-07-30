@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import cardBack from '../assets/card-back.png';
+import Icons from '../utils/iconUtils';
  
 const CardGallery = ({ cards }) => {
   return (
@@ -72,21 +73,30 @@ const CardDetails = ({ card }) => {
   const level = ['Normal Monster', 'Effect Monster', 'Synchro Monster'].includes(card.type) ? card.level : null;
   const rank = ['XYZ Monster'].includes(card.type) ? card.level : null;
   const link = card.linkval;
-  const category = isMonster ? `[ ${card.race} / ${card.type} ]` : null;
+  const category = isMonster ? `[ ${card.race} / ${card.type.split(' ')[0]} ]` : null;
   const atk = card.atk;
   const def = card.type.includes('Link') ? '-' : card.def;
 
+  const DetailItem = ({text, icon}) => {
+    return (
+      <div className="d-flex align-content-center border-right pr-2 mr-2">
+        {icon ? <Image src={icon} height={18} width={18} className="my-auto mr-1 d-sm-none d-md-block" /> : null}
+        <strong>{text}</strong>
+      </div>
+    );
+  };
+
   return (
-    <>
-      {attributeIcon   ? <strong className="border-right pr-2">{`${attributeIcon}`}</strong> : null}
-      {spellOrTrapType ? <strong className="border-right px-2">{`${spellOrTrapType}`}</strong> : null}
-      {level           ? <strong className="border-right px-2">{`Level ${level}`}</strong> : null}
-      {rank            ? <strong className="border-right px-2">{`Rank ${rank}`}</strong> : null}
-      {link            ? <strong className="border-right px-2">{`Link ${link}`}</strong> : null}
-      {category        ? <strong className="border-right px-2">{`${category}`}</strong> : null}
-      {atk != null     ? <strong className="border-right px-2">{`ATK ${atk}`}</strong> : null}
-      {def != null     ? <strong className="border-right px-2">{`DEF ${def}`}</strong> : null}
-    </>
+    <div className="d-flex">
+      {attributeIcon   ? <DetailItem text={attributeIcon} icon={Icons.attributeIcons[attributeIcon]} /> : null}
+      {spellOrTrapType ? <DetailItem text={spellOrTrapType} icon={Icons.spellOrTrapTypes[spellOrTrapType]} /> : null}
+      {level           ? <DetailItem text={`Level ${level}`} icon={Icons.levels.level} /> : null}
+      {rank            ? <DetailItem text={`Rank ${rank}`} icon={Icons.levels.rank} /> : null}
+      {link            ? <DetailItem text={`Link ${link}`} /> : null}
+      {category        ? <DetailItem text={category} icon={Icons.monsterTypes[card.race]} /> : null}
+      {atk != null     ? <DetailItem text={`ATK ${atk}`} /> : null}
+      {def != null     ? <DetailItem text={`DEF ${def}`} /> : null}
+    </div>
   );
 };
 
