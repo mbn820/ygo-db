@@ -17,17 +17,17 @@ const CardGallery = ({ cards }) => {
 const CardGalleryItem = ({ card }) => {
   return (
     <>
-      <Card body className="border-light">
+      <Card body className="secondary-bg">
         <Row>
-          <Col sm={12} md={2}>
+          <Col sm={12} md={3}>
             <div className="mb-3 mb-md-0">
               <CardImage src={card?.card_images[0]?.image_url} height="250" onClick={() => console.log('Clicked...')} />
             </div>
           </Col>
-          <Col sm={12} md={10}>
+          <Col sm={12} md={9}>
             <div className="d-flex space-between">
               <h5><strong>{card.name}</strong></h5>
-              <span className="ml-auto">{card.archetype}</span>
+              <span className="ml-auto font-italic">{card.archetype}</span>
             </div>
 
             <hr className="border-top my-1" />
@@ -37,7 +37,7 @@ const CardGalleryItem = ({ card }) => {
             <hr className="border-top my-1" /> 
             {/* <hr style={{ borderTop: '1px solid white', margin: '5px 0' }} /> */}
 
-            <p className="text-muted">{card.desc}</p>
+            <p className="">{card.desc}</p>
             {/* <hr style={{ borderTop: '1px solid white', margin: '5px 0' }} />
             {JSON.stringify(card)} */}
           </Col>
@@ -80,14 +80,14 @@ const CardDetails = ({ card }) => {
   const DetailItem = ({text, icon}) => {
     return (
       <div className="d-flex align-content-center border-right pr-2 mr-2">
-        {icon ? <Image src={icon} height={18} width={18} className="my-auto mr-1 d-sm-none d-md-block" /> : null}
+        {icon ? <Image src={icon} height={18} width={18} className="my-auto mr-1 d-none d-sm-none d-md-block" /> : null}
         <strong>{text}</strong>
       </div>
     );
   };
 
   return (
-    <div className="d-flex">
+    <div className="d-flex flex-wrap">
       {attributeIcon   ? <DetailItem text={attributeIcon} icon={Icons.attributeIcons[attributeIcon]} /> : null}
       {spellOrTrapType ? <DetailItem text={spellOrTrapType} icon={Icons.spellOrTrapTypes[spellOrTrapType]} /> : null}
       {level           ? <DetailItem text={`Level ${level}`} icon={Icons.levels.level} /> : null}

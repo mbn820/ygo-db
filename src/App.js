@@ -12,34 +12,36 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <NavigationBar searchFn={() => {}} />
-        <div style={{height: 110}}></div>
-        <Container>
-          <Switch>
-            <Route path="/ygo-db" exact>
-              <CardSearch />
-            </Route>
-            <Route path="/ygo-db/card-search">
-              <CardSearch />
-            </Route>
-            <Route path="/ygo-db/decks">
-              <InProgressPage />
-            </Route>
-            <Route path="/ygo-db/sets">
-              <InProgressPage />
-            </Route>
-            <Route path="/ygo-db/archetypes">
-              <InProgressPage />
-            </Route>
-            <Route path="/ygo-db/deck-builder">
-              <InProgressPage />
-            </Route>
-            <Route path="*">
-              <PageNotFound />
-            </Route>
-          </Switch>
-        </Container>
-        <Footer />
+        <div className="main-bg">
+          <NavigationBar searchFn={() => {}} />
+          <div style={{height: 110}}></div>
+          <Container>
+            <Switch>
+              <Route path="/ygo-db" exact>
+                <CardSearch />
+              </Route>
+              <Route path="/ygo-db/card-search">
+                <CardSearch />
+              </Route>
+              <Route path="/ygo-db/decks">
+                <InProgressPage />
+              </Route>
+              <Route path="/ygo-db/sets">
+                <InProgressPage />
+              </Route>
+              <Route path="/ygo-db/archetypes">
+                <InProgressPage />
+              </Route>
+              <Route path="/ygo-db/deck-builder">
+                <InProgressPage />
+              </Route>
+              <Route path="*">
+                <PageNotFound />
+              </Route>
+            </Switch>
+          </Container>
+          <Footer />
+        </div>
       </BrowserRouter>
     </div>
   );

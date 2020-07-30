@@ -33,7 +33,7 @@ const CardSearchResults = ({ searchResults }) => {
         <Card.Footer className="d-flex justify-content-center">
           <CardSearchPagination meta={meta} />
         </Card.Footer> 
-        <Card.Body className="">
+        <Card.Body className="p-0">
           <CardGallery cards={data} />
         </Card.Body> 
         <Card.Footer className="d-flex justify-content-center">
