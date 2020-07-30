@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ygo-db/static/css/main.4cda3079.chunk.css",
-    "main.js": "/ygo-db/static/js/main.ae6cfc63.chunk.js",
-    "main.js.map": "/ygo-db/static/js/main.ae6cfc63.chunk.js.map",
+    "main.css": "/ygo-db/static/css/main.1eff4649.chunk.css",
+    "main.js": "/ygo-db/static/js/main.f73fb774.chunk.js",
+    "main.js.map": "/ygo-db/static/js/main.f73fb774.chunk.js.map",
     "runtime-main.js": "/ygo-db/static/js/runtime-main.f38e1e84.js",
     "runtime-main.js.map": "/ygo-db/static/js/runtime-main.f38e1e84.js.map",
-    "static/js/2.313d7f30.chunk.js": "/ygo-db/static/js/2.313d7f30.chunk.js",
-    "static/js/2.313d7f30.chunk.js.map": "/ygo-db/static/js/2.313d7f30.chunk.js.map",
+    "static/js/2.b5248dd2.chunk.js": "/ygo-db/static/js/2.b5248dd2.chunk.js",
+    "static/js/2.b5248dd2.chunk.js.map": "/ygo-db/static/js/2.b5248dd2.chunk.js.map",
     "index.html": "/ygo-db/index.html",
-    "precache-manifest.e71f4a3cfafde23fce96a4f7c48357ef.js": "/ygo-db/precache-manifest.e71f4a3cfafde23fce96a4f7c48357ef.js",
+    "precache-manifest.9866d2dacd7753a02bfb303871c0fa64.js": "/ygo-db/precache-manifest.9866d2dacd7753a02bfb303871c0fa64.js",
     "service-worker.js": "/ygo-db/service-worker.js",
-    "static/css/main.4cda3079.chunk.css.map": "/ygo-db/static/css/main.4cda3079.chunk.css.map",
-    "static/js/2.313d7f30.chunk.js.LICENSE.txt": "/ygo-db/static/js/2.313d7f30.chunk.js.LICENSE.txt",
+    "static/css/main.1eff4649.chunk.css.map": "/ygo-db/static/css/main.1eff4649.chunk.css.map",
+    "static/js/2.b5248dd2.chunk.js.LICENSE.txt": "/ygo-db/static/js/2.b5248dd2.chunk.js.LICENSE.txt",
     "static/media/aqua.png": "/ygo-db/static/media/aqua.c42179b1.png",
     "static/media/beast.png": "/ygo-db/static/media/beast.e0c0d9c7.png",
     "static/media/card-back.png": "/ygo-db/static/media/card-back.f16ec535.png",
@@ -43,6 +43,7 @@
     "static/media/reptile.png": "/ygo-db/static/media/reptile.3923f55b.png",
     "static/media/ritual.png": "/ygo-db/static/media/ritual.379b89d7.png",
     "static/media/rock.png": "/ygo-db/static/media/rock.b971b15d.png",
+    "static/media/scale.png": "/ygo-db/static/media/scale.5d7676ee.png",
     "static/media/sea-serpent.png": "/ygo-db/static/media/sea-serpent.25d19ec8.png",
     "static/media/spell.png": "/ygo-db/static/media/spell.43a411c3.png",
     "static/media/spellcaster.png": "/ygo-db/static/media/spellcaster.1c3ba01b.png",
@@ -56,8 +57,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f38e1e84.js",
-    "static/js/2.313d7f30.chunk.js",
-    "static/css/main.4cda3079.chunk.css",
-    "static/js/main.ae6cfc63.chunk.js"
+    "static/js/2.b5248dd2.chunk.js",
+    "static/css/main.1eff4649.chunk.css",
+    "static/js/main.f73fb774.chunk.js"
   ]
 }

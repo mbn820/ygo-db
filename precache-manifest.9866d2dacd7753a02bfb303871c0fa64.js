@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73763e2818b434c09ef13505539dba97",
+    "revision": "32bae2ad041e62b2c391a5849b7661b5",
     "url": "/ygo-db/index.html"
   },
   {
-    "revision": "8a0e1f8d9582e6f9f705",
-    "url": "/ygo-db/static/css/main.4cda3079.chunk.css"
+    "revision": "e2b349189a44c2f1b10e",
+    "url": "/ygo-db/static/css/main.1eff4649.chunk.css"
   },
   {
-    "revision": "70493bbc39cdabdc1ace",
-    "url": "/ygo-db/static/js/2.313d7f30.chunk.js"
+    "revision": "390675ed77deb7edeeae",
+    "url": "/ygo-db/static/js/2.b5248dd2.chunk.js"
   },
   {
     "revision": "117d65892edc8adcd29d4a0d57b5a80a",
-    "url": "/ygo-db/static/js/2.313d7f30.chunk.js.LICENSE.txt"
+    "url": "/ygo-db/static/js/2.b5248dd2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8a0e1f8d9582e6f9f705",
-    "url": "/ygo-db/static/js/main.ae6cfc63.chunk.js"
+    "revision": "e2b349189a44c2f1b10e",
+    "url": "/ygo-db/static/js/main.f73fb774.chunk.js"
   },
   {
     "revision": "6cd0f440560da06f039b",
@@ -146,6 +146,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b971b15d140bc83ddf5bedd154d63e1c",
     "url": "/ygo-db/static/media/rock.b971b15d.png"
+  },
+  {
+    "revision": "5d7676ee31b7024dd0dcb9042e0a5c67",
+    "url": "/ygo-db/static/media/scale.5d7676ee.png"
   },
   {
     "revision": "25d19ec8cd6dc7a70763b90777e0d8bb",
