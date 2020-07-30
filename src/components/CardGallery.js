@@ -35,10 +35,38 @@ const CardGalleryItem = ({ card }) => {
             <CardDetails card={card} />
 
             <hr className="border-top my-1" /> 
-            {/* <hr style={{ borderTop: '1px solid white', margin: '5px 0' }} /> */}
 
-            <p className="">{card.desc}</p>
-            {/* <hr style={{ borderTop: '1px solid white', margin: '5px 0' }} />
+            {card.type.includes('Pendulum')
+              ? <>
+                  <div className="d-flex">
+                    <div className="d-flex border-right px-2 mr-2">
+                      <Image src={Icons.scale} className="my-auto mr-2" height={20} width={25}></Image>
+                      <strong className="my-auto">{card.scale}</strong>
+                    </div>
+                    <div>
+                      {card.desc.includes('[ Pendulum Effect ]')
+                        ? <p className="mb-0">{card.desc.split('[ Pendulum Effect ]')[1].split('----')[0].trim()}</p>
+                        : null
+                      }
+                    </div>
+                  </div>
+
+                  <hr className="border-top my-1" /> 
+
+                  {card.desc.includes('[ Monster Effect ]')
+                    ? <p className="mb-0" >{card.desc.split('[ Monster Effect ]')[1].trim()}</p>
+                    : null
+                  }
+
+                  {card.desc.includes('[ Flavor Text ]')
+                    ? <p className="mb-0" >{card.desc.split('[ Flavor Text ]')[1].trim()}</p>
+                    : null
+                  }
+                </>
+              : <p className="mb-0">{card.desc}</p>
+            }
+
+            {/* <hr className="border-top my-1" /> 
             {JSON.stringify(card)} */}
           </Col>
         </Row>

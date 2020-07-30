@@ -37,6 +37,7 @@ import Thunder from '../assets/thunder.png';
 import Warrior from '../assets/warrior.png';
 import WingedBeast from '../assets/winged-beast.png';
 import Zombie from '../assets/zombie.png';
+import scale from '../assets/scale.png';
 
 const Icons = {
   attributeIcons: {
@@ -52,7 +53,8 @@ const Icons = {
     Aqua, Beast, 'Beast-Warrior': BeastWarrior, Dinosaur, 'Divine-Beast': DivineBeast, Dragon, Fairy, Fiend, 
     Fish, Insect, Machine, Plant, Psychic, Pyro, Reptile, Rock, 'Sea-Serpent': SeaSerpent,
     Spellcaster, Thunder, Warrior, 'Winged Beast': WingedBeast, Zombie
-  }
+  },
+  scale
 };
 
 export default Icons;

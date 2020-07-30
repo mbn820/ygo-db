@@ -14,7 +14,7 @@ const CardSearch = () => {
     sort: 'Name',
     view: 'Gallery',
     fname: '',
-    type: '',
+    type: 'Pendulum Effect Monster',
     race: '',
     attribute: '',
     cardEffect: '',
