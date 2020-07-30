@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { searchCards } from '../../service/ygodatabaseservice';
-import CardSearchForm from '../../components/CardSearchForm';
-import CardSearchResults from '../../components/CardSearchResults';
 import Loading from '../../components/Loading';
 import CardSearchContext from '../../context/CardSearchContext';
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import CardGallery from '../../components/CardGallery';
+import ResultInfo from './components/ResultInfo';
+import CardSearchSettings from './components/CardSearchSettings';
+import CardSearchPagination from './components/CardSearchPagination';
+import CardSearchForm from './components/CardSearchForm';
 
 const CardSearch = () => {
   const [searchResults, setSearchResults] = useState(null);
@@ -30,7 +36,6 @@ const CardSearch = () => {
 
   useEffect(() => {
     search(params, pageInfo);
-
   }, []);
 
   const search = (params, pageInfo) => {
@@ -41,21 +46,39 @@ const CardSearch = () => {
       .finally(() => setLoadingResults(false));
   };
 
-  const paginate = () => {
-
-  };
-
   return (
-    <div>
-      <CardSearchContext.Provider value={{ params, setParams, pageInfo, setPageInfo, search }}>
+    <>
+      <CardSearchContext.Provider value={{ params, setParams, pageInfo, setPageInfo, search, searchResults }}>
         <CardSearchForm />
+
         <div className="mt-3"></div>
-        {loadingResults 
-          ? <Loading /> 
-          : searchResults ? <CardSearchResults searchResults={searchResults} /> : null
+
+        {searchResults
+          ? <Card>
+              <Card.Header>
+                <Row>
+                  <Col sm={12} md={4}>
+                    <ResultInfo />
+                  </Col>
+                  <Col sm={12} md={8}>
+                    <CardSearchSettings />
+                  </Col>
+                </Row>
+              </Card.Header>
+              <Card.Footer className="d-flex justify-content-center">
+                <CardSearchPagination />
+              </Card.Footer> 
+              <Card.Body className="p-0">
+                {loadingResults ? <Loading /> : <CardGallery cards={searchResults.data} />}
+              </Card.Body> 
+              <Card.Footer className="d-flex justify-content-center">
+                <CardSearchPagination />
+              </Card.Footer> 
+            </Card>
+          : null  
         }
       </CardSearchContext.Provider>
-    </div>
+    </>
   );
 };
 

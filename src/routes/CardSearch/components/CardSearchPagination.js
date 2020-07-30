@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 import Pagination from 'react-bootstrap/Pagination';
-import CardSearchContext from '../../context/CardSearchContext';
+import CardSearchContext from '../../../context/CardSearchContext';
 
-const CardSearchPagination = ({ meta }) => {
-  const { params, setParams, pageInfo, setPageInfo, search } = useContext(CardSearchContext);
+const CardSearchPagination = () => {
+  const { params, pageInfo, setPageInfo, search, searchResults } = useContext(CardSearchContext);
 
   const firstPage = 1;
 
-  const lastPage = meta.total_pages + 1;
+  const lastPage = searchResults.meta.total_pages + 1;
 
   const pages = Array(Math.min(5, lastPage)).fill(1).map((val, index) => val + index);
 
