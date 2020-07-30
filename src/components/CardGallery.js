@@ -82,12 +82,12 @@ const CardImage = ({ src, height, onClick }) => {
     <>
       {loaded
         ? null
-        : <Image src={cardBack} height={height} className="container-fluid p-0"></Image>
+        : <Image src={cardBack} height={height} className="container-fluid p-0 h-auto"></Image>
       }
       <Image src={src} 
         onClick={onClick} 
         onLoad={() => setLoaded(true)}
-        className="container-fluid p-0"
+        className="container-fluid p-0 h-auto"
         style= {{ display: loaded ? '' : 'none', cursor: 'pointer' }}/>
     </>  
   );
