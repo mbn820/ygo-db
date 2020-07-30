@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <div className="">
+        <div className="main-bg">
           <NavigationBar searchFn={() => {}} />
           <div style={{height: 110}}></div>
           <Container>

@@ -2,10 +2,10 @@ import React, { useContext } from 'react';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import CardGallery from './CardGallery';
-import CardSearchSettings from './CardSearchSettings';
-import CardSearchPagination from './CardSearchPagination';
-import CardSearchContext from '../context/CardSearchContext';
+import CardGallery from '../CardGallery';
+import CardSearchSettings from '../CardSearchSettings';
+import CardSearchPagination from '../CardSearchPagination';
+import CardSearchContext from '../../context/CardSearchContext';
 
 const CardSearchResults = ({ searchResults }) => {
   const {meta, data} = searchResults;

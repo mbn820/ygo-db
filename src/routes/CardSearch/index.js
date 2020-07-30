@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import CardSearchForm from '../components/CardSearchForm';
-import CardSearchResults from '../components/CardSearchResults';
-import Loading from '../components/Loading';
+import CardSearchForm from '../../components/CardSearchForm';
+import CardSearchResults from '../../components/CardSearchResults';
+import Loading from '../../components/Loading';
 import * as _ from 'lodash';
-import CardSearchContext from '../context/CardSearchContext';
+import CardSearchContext from '../../context/CardSearchContext';
 
 const CardSearch = () => {
   const BASE_URL = 'https://db.ygoprodeck.com/api/v7/cardinfo.php';

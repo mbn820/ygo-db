@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Pagination from 'react-bootstrap/Pagination';
-import CardSearchContext from '../context/CardSearchContext';
+import CardSearchContext from '../../context/CardSearchContext';
 
 const CardSearchPagination = ({ meta }) => {
   const { params, setParams, pageInfo, setPageInfo, search } = useContext(CardSearchContext);

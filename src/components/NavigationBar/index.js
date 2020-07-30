@@ -7,7 +7,7 @@ import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import InputGroup from 'react-bootstrap/InputGroup';
 import debounce from 'lodash/debounce';
-import logo from '../assets/logo.png'
+import logo from '../../assets/logo.png'
 
 const NavigationBar = ({ searchFn }) => {
   const debouncedSearch = useCallback(debounce(term => searchFn(term), 1000), []);

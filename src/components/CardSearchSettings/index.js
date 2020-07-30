@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import ParamsSelect from './ParamsSelect';
-import CardSearchContext from '../context/CardSearchContext';
+import ParamsSelect from '../ParamsSelect';
+import CardSearchContext from '../../context/CardSearchContext';
 
 const CardSearchSettings = () => {
   const { params, setParams, pageInfo, setPageInfo, search } = useContext(CardSearchContext);
