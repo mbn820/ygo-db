@@ -20,7 +20,7 @@ const CardSearchSettings = () => {
   }
 
   const onSelectPageSize = (e) => {
-    const update = { ...pageInfo, size: e.target.value };
+    const update = { ...pageInfo, size: e.target.value, page: 1 };
     setPageInfo(update);
     search(params, update);
   }
