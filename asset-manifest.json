@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ygo-db/static/css/main.1eff4649.chunk.css",
-    "main.js": "/ygo-db/static/js/main.f73fb774.chunk.js",
-    "main.js.map": "/ygo-db/static/js/main.f73fb774.chunk.js.map",
+    "main.css": "/ygo-db/static/css/main.a283d139.chunk.css",
+    "main.js": "/ygo-db/static/js/main.ecf400bd.chunk.js",
+    "main.js.map": "/ygo-db/static/js/main.ecf400bd.chunk.js.map",
     "runtime-main.js": "/ygo-db/static/js/runtime-main.f38e1e84.js",
     "runtime-main.js.map": "/ygo-db/static/js/runtime-main.f38e1e84.js.map",
-    "static/js/2.b5248dd2.chunk.js": "/ygo-db/static/js/2.b5248dd2.chunk.js",
-    "static/js/2.b5248dd2.chunk.js.map": "/ygo-db/static/js/2.b5248dd2.chunk.js.map",
+    "static/js/2.adf67cf8.chunk.js": "/ygo-db/static/js/2.adf67cf8.chunk.js",
+    "static/js/2.adf67cf8.chunk.js.map": "/ygo-db/static/js/2.adf67cf8.chunk.js.map",
     "index.html": "/ygo-db/index.html",
-    "precache-manifest.9866d2dacd7753a02bfb303871c0fa64.js": "/ygo-db/precache-manifest.9866d2dacd7753a02bfb303871c0fa64.js",
+    "precache-manifest.2c401e2b2d17b2c71a0a58bb6b0d20c4.js": "/ygo-db/precache-manifest.2c401e2b2d17b2c71a0a58bb6b0d20c4.js",
     "service-worker.js": "/ygo-db/service-worker.js",
-    "static/css/main.1eff4649.chunk.css.map": "/ygo-db/static/css/main.1eff4649.chunk.css.map",
-    "static/js/2.b5248dd2.chunk.js.LICENSE.txt": "/ygo-db/static/js/2.b5248dd2.chunk.js.LICENSE.txt",
+    "static/css/main.a283d139.chunk.css.map": "/ygo-db/static/css/main.a283d139.chunk.css.map",
+    "static/js/2.adf67cf8.chunk.js.LICENSE.txt": "/ygo-db/static/js/2.adf67cf8.chunk.js.LICENSE.txt",
     "static/media/aqua.png": "/ygo-db/static/media/aqua.c42179b1.png",
     "static/media/beast.png": "/ygo-db/static/media/beast.e0c0d9c7.png",
     "static/media/card-back.png": "/ygo-db/static/media/card-back.f16ec535.png",
@@ -29,6 +29,7 @@
     "static/media/fiend.png": "/ygo-db/static/media/fiend.63e2f933.png",
     "static/media/fire.png": "/ygo-db/static/media/fire.40ba053a.png",
     "static/media/fish.png": "/ygo-db/static/media/fish.29cda041.png",
+    "static/media/cardList.css": "/ygo-db/static/media/frame-trap-card.f1213833.png",
     "static/media/insect.png": "/ygo-db/static/media/insect.488b4a83.png",
     "static/media/level.png": "/ygo-db/static/media/level.beaaaefa.png",
     "static/media/light.png": "/ygo-db/static/media/light.c20c79f1.png",
@@ -57,8 +58,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f38e1e84.js",
-    "static/js/2.b5248dd2.chunk.js",
-    "static/css/main.1eff4649.chunk.css",
-    "static/js/main.f73fb774.chunk.js"
+    "static/js/2.adf67cf8.chunk.js",
+    "static/css/main.a283d139.chunk.css",
+    "static/js/main.ecf400bd.chunk.js"
   ]
 }
