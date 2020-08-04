@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ygo-db/static/css/main.a283d139.chunk.css",
-    "main.js": "/ygo-db/static/js/main.1c252459.chunk.js",
-    "main.js.map": "/ygo-db/static/js/main.1c252459.chunk.js.map",
+    "main.js": "/ygo-db/static/js/main.b4907b62.chunk.js",
+    "main.js.map": "/ygo-db/static/js/main.b4907b62.chunk.js.map",
     "runtime-main.js": "/ygo-db/static/js/runtime-main.f38e1e84.js",
     "runtime-main.js.map": "/ygo-db/static/js/runtime-main.f38e1e84.js.map",
-    "static/js/2.22fea4cd.chunk.js": "/ygo-db/static/js/2.22fea4cd.chunk.js",
-    "static/js/2.22fea4cd.chunk.js.map": "/ygo-db/static/js/2.22fea4cd.chunk.js.map",
+    "static/js/2.af0eb5df.chunk.js": "/ygo-db/static/js/2.af0eb5df.chunk.js",
+    "static/js/2.af0eb5df.chunk.js.map": "/ygo-db/static/js/2.af0eb5df.chunk.js.map",
     "index.html": "/ygo-db/index.html",
-    "precache-manifest.9bc6a8cee80a949e504f9cd5b783274b.js": "/ygo-db/precache-manifest.9bc6a8cee80a949e504f9cd5b783274b.js",
+    "precache-manifest.8a1cef3db212eb4222a7b5598884993f.js": "/ygo-db/precache-manifest.8a1cef3db212eb4222a7b5598884993f.js",
     "service-worker.js": "/ygo-db/service-worker.js",
     "static/css/main.a283d139.chunk.css.map": "/ygo-db/static/css/main.a283d139.chunk.css.map",
-    "static/js/2.22fea4cd.chunk.js.LICENSE.txt": "/ygo-db/static/js/2.22fea4cd.chunk.js.LICENSE.txt",
+    "static/js/2.af0eb5df.chunk.js.LICENSE.txt": "/ygo-db/static/js/2.af0eb5df.chunk.js.LICENSE.txt",
     "static/media/aqua.png": "/ygo-db/static/media/aqua.c42179b1.png",
     "static/media/beast.png": "/ygo-db/static/media/beast.e0c0d9c7.png",
     "static/media/card-back.png": "/ygo-db/static/media/card-back.f16ec535.png",
@@ -58,8 +58,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f38e1e84.js",
-    "static/js/2.22fea4cd.chunk.js",
+    "static/js/2.af0eb5df.chunk.js",
     "static/css/main.a283d139.chunk.css",
-    "static/js/main.1c252459.chunk.js"
+    "static/js/main.b4907b62.chunk.js"
   ]
 }
